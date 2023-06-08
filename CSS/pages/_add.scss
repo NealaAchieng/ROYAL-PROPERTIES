@@ -22,7 +22,7 @@
     padding: 2em;
     width: 50%;
     margin-bottom: 2em;
-    background-color:white;
+    background-color: white;
     box-shadow: 0 0 15px lightgrey;
     select {
       margin-top: 2em;
@@ -41,15 +41,14 @@
       width: 100%;
       color: $blue;
       border-radius: 10px;
-      
     }
     button {
       background-color: $blue;
       color: $white;
       border: none;
-      // margin: 2em;
+
       display: block;
-      // margin: 0 auto;
+
       cursor: pointer;
       padding: 1em;
       transition: all 0.5s ease-in-out;
@@ -69,10 +68,18 @@
   }
 }
 // js
-.error{
+.error {
   border: 2px solid red;
 }
-.error-message{
+.error-message {
   color: red;
   padding-bottom: 1em;
+}
+
+//media queries
+
+@media (min-width: 768px) and (max-width: 950px) {
+  .form {
+    // width: 100vw;
+  }
 }

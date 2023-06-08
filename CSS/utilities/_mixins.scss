@@ -4,6 +4,8 @@
     align-items: $align;
     flex-direction: $direction;
   }
+
+ 
   
   @mixin fit-image {
     width: 500px;
@@ -15,3 +17,10 @@
       object-fit: cover;
     }
   }
+
+  //  @mixin flex($justify, $align, $direction: column) {
+  //   display: flex;
+  //   justify-content: $justify;
+  //   align-items: $align;
+  //   flex-direction: $direction;
+  // }
