@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://127.0.0.1:5500/add.html? -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    
+    
+    
+    
+<link rel="stylesheet" href="./Details_files/style.css"><link rel="preconnect" href="https://fonts.googleapis.com/"><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><link href="./Details_files/css2" rel="stylesheet"><link rel="stylesheet" href="./Details_files/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer"></head>
+<body cz-shortcut-listen="true"><header>
+    <nav class="nav">
+      <div class="container">
+        <div class="nav__container">
+          <div class="nav__left">
+            <img width="150" src="./Details_files/real-estate-logo-design-template-a9bbb92f0356e6b3765f766fcb9dd6cf.jpg" alt="logo">
+          </div>
+
+          <div class="nav__right">
+            <ul>
+              <li>Home</li>
+              <li>properties</li>
+              <li>Add-a-house</li>
+              <li>
+                <button><a>Booking</a></button>
+              </li>
+              <li><i class="fa-solid fa-bars" style="color: #000000"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="form">
+    <div class="container">
+      <div class="container__items">
+        <div>
+          <h3>Fill The Form Below</h3>
+        </div>
+        <form>
+          
+        <label for="">Name</label>
+        <div>
+          <input placeholder="Names of the house" type="text">
+        </div>
+        <label for="">Price</label>
+        <div>
+          <input placeholder="price" type="text">
+        </div>
+        <label for="">Select</label>
+        <div>
+          <input placeholder="Rent,buy or sell house" type="text">
+        </div>
+        <label for="">Location</label>
+        <div>
+          <input placeholder="Area" type="text">
+        </div>
+        <label for="">Size</label>
+        <div>
+        <input placeholder="Squarefeet" type="text">
+        </div>
+        <label for="">Images</label>
+        <div>
+        <input placeholder="image" type="text">
+        </div>
+        <label for="">Select</label>
+        <div>
+        <input placeholder="Number of rooms" type="text">
+        </div>
+        <label for="">Amenities</label>
+        <div>
+          <textarea placeholder="Describtion" rows="7" cols="20"></textarea>
+        </div>
+        <div>
+          <select name="" id="">
+              <option value="" selected="" disabled="">House</option>
+              <option value="">Hazel Copse</option>
+              <option value="">Oklands Longview</option>
+              <option value="">Poppy Hedgerous</option>
+              <option value=""></option>
+          </select>
+        </div>
+        <button>ADD</button>
+        </form>
+
+
+
+      </div>
+
+    </div>
+
+  </section>
+  
+  <section class="footer">
+    <div class="footer__container">
+ <div class="footer__container__section">
+  <div>
+    <img width="200" src="./Details_files/Real Estate Logo - Made with PosterMyWall (1).png" alt="">
+  </div>
+  <img width="50" src="./Details_files/twitter.png" alt="">
+  <img width="50" src="./Details_files/facebook.png" alt="">
+  <img width="50" src="./Details_files/instagram.png" alt="">
+ </div>
+
+  <div class="footer__container__section">
+<h3>Quick Links</h3>
+<ul>
+  <li class="home">Home</li>
+  <li>Properties</li>
+  <li>Add-a-house</li>
+</ul>
+</div>
+ 
+
+<div class="footer__container__section">
+  <h3>Contact Details</h3>
+  <ul>
+    <li><img width="30" src="./Details_files/whatsapp.png" alt="pin">0115798003</li>
+    <li><img width="30" src="./Details_files/contacting.png" alt="call">+254 111 555 888</li>
+    <li><img width="30" src="./Details_files/mail.png" alt="email">info@techcare.com</li>
+  </ul>
+</div>
+  </div>
+
+</section>
+
+    
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

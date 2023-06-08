@@ -1,0 +1,53 @@
+@use"../utilities/mixins" as *;
+@use"../utilities/variables" as *;
+.details{
+    background-color: #d8dee5;
+    h3{
+        text-align: center;
+        padding: 1em;
+        font-size:2rem; 
+        color: #005CFF;
+        }
+        &__right{
+            @include flex(space-between,center);
+            p{
+                margin-top: 0.5em;
+                
+            
+            }
+            button{
+                margin-top: 0.5em;
+                background-color:#005CFF; 
+                color: $white; 
+                padding: 1em; 
+                cursor: pointer;
+                border: none;
+            }
+           
+        }
+        &__card{
+            background-color: white;
+            width: 23%;
+            box-shadow:1px 1px 5px gray;
+            margin: 1em;
+            border-radius: 10px;
+            &__img{
+                img{
+                    width: 100%;
+                }
+                h4{
+                    padding: 1em;
+                }
+                
+
+                
+            }
+
+            div{
+                &:nth-child(2){
+                    padding: 1em;
+                }
+            }
+        }
+    
+}

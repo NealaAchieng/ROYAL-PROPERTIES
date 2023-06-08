@@ -1,0 +1,30 @@
+@use"../utilities/variables" as *;
+@use"../utilities/mixins" as *;
+.footer{
+    &__container{
+
+        @include flex(center,center);
+        gap:17em;
+        // background-color: #f5fbff;
+        color: black;
+        
+        &__section{
+            h3{
+padding: 1em;
+font-size: 1.5em;
+            }
+            ul li{
+                margin-top: 1em ;
+                font-size: 1.2em;
+
+            }
+            .fa-solid{
+                font-size: 1.5em;
+            }
+
+        
+            
+
+        }
+    }
+}

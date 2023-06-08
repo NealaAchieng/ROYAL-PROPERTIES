@@ -1,0 +1,284 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav .container {
+  background-color: #fff;
+}
+.nav__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  border-bottom: 2px 2px 5px;
+  gap: 5px;
+  color: #005CFF;
+  color: white;
+}
+.nav__right ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.nav__right ul li {
+  padding: 1em;
+}
+.nav__right ul li a {
+  color: black;
+}
+.nav__right ul button {
+  margin: 0 auto;
+  padding: 1em;
+  background-color: #005CFF;
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+.hero {
+  position: relative;
+  height: 70vh;
+}
+.hero__container {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.hero__container h3 {
+  font-size: 3rem;
+  color: #fff;
+}
+.hero__container .myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+.hero button {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  margin: 0 auto;
+  padding: 1.5em;
+  background-color: #005CFF;
+  color: #fff;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+.hero .myVideo {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 70vh;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.card {
+  margin: 4em 0;
+}
+.card_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 4em;
+}
+.card__start {
+  background-color: white;
+  text-align: center;
+  width: 30%;
+  padding: 5em;
+  border-radius: 10px;
+  box-shadow: 1px 1px 5px grey;
+  transition: all 0.5s ease-in-out;
+}
+.card__start:hover {
+  transform: scale(1.1);
+}
+.card__start__img {
+  width: 100%;
+  height: 200px;
+  text-align: center;
+}
+.card__start__img img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.card__start h4 {
+  color: #005CFF;
+  font-size: 1.5rem;
+  padding: 1em 0;
+}
+
+.details {
+  background-color: #d8dee5;
+}
+.details h3 {
+  text-align: center;
+  padding: 1em;
+  font-size: 2rem;
+  color: #005CFF;
+}
+.details__right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.details__right p {
+  margin-top: 0.5em;
+}
+.details__right button {
+  margin-top: 0.5em;
+  background-color: #005CFF;
+  color: #fff;
+  padding: 1em;
+  cursor: pointer;
+  border: none;
+}
+.details__card {
+  background-color: white;
+  width: 23%;
+  box-shadow: 1px 1px 5px gray;
+  margin: 1em;
+  border-radius: 10px;
+}
+.details__card__img img {
+  width: 100%;
+}
+.details__card__img h4 {
+  padding: 1em;
+}
+.details__card div:nth-child(2) {
+  padding: 1em;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 17em;
+  color: black;
+}
+.footer__container__section h3 {
+  padding: 1em;
+  font-size: 1.5em;
+}
+.footer__container__section ul li {
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+.footer__container__section .fa-solid {
+  font-size: 1.5em;
+}
+
+.form {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgb(0, 0, 0)), url("../../images/img2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 150vh;
+}
+.form__container {
+  border: 5px solid black;
+}
+.form h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-size: 2rem;
+  color: black;
+}
+.form form {
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 2em;
+  padding: 2em;
+  width: 50%;
+  margin-bottom: 2em;
+  background-color: white;
+  box-shadow: 0 0 15px lightgrey;
+}
+.form form select {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 2em;
+  border-radius: 10px;
+  width: 100%;
+  background-color: white;
+}
+.form form input {
+  padding: 2em;
+  margin-top: 1rem;
+  margin-bottom: 1em;
+  outline: none;
+  width: 100%;
+  color: #005CFF;
+  border-radius: 10px;
+}
+.form form button {
+  background-color: #005CFF;
+  color: #fff;
+  border: none;
+  display: block;
+  cursor: pointer;
+  padding: 1em;
+  transition: all 0.5s ease-in-out;
+  padding: 2em 5em;
+}
+.form form button:hover {
+  transform: scale(1.1);
+}
+.form form textarea {
+  padding: 2em;
+  margin-top: 1em;
+  width: 100%;
+  outline: none;
+  border-radius: 10px;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+.error-message {
+  color: red;
+  padding-bottom: 1em;
+}

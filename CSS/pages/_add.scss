@@ -1,0 +1,78 @@
+@use "../utilities/variables" as *;
+@use "../utilities/mixins" as *;
+.form {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0.2)),
+    url("../../images/img2.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 150vh;
+  &__container {
+    border: 5px solid black;
+  }
+  h3 {
+    @include flex(center, center);
+    font-size: 2rem;
+    color: black;
+  }
+  form {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 2em;
+    padding: 2em;
+    width: 50%;
+    margin-bottom: 2em;
+    background-color:white;
+    box-shadow: 0 0 15px lightgrey;
+    select {
+      margin-top: 2em;
+      margin-bottom: 2em;
+      padding: 2em;
+      border-radius: 10px;
+      width: 100%;
+      background-color: white;
+    }
+
+    input {
+      padding: 2em;
+      margin-top: 1rem;
+      margin-bottom: 1em;
+      outline: none;
+      width: 100%;
+      color: $blue;
+      border-radius: 10px;
+      
+    }
+    button {
+      background-color: $blue;
+      color: $white;
+      border: none;
+      // margin: 2em;
+      display: block;
+      // margin: 0 auto;
+      cursor: pointer;
+      padding: 1em;
+      transition: all 0.5s ease-in-out;
+      padding: 2em 5em;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+
+    textarea {
+      padding: 2em;
+      margin-top: 1em;
+      width: 100%;
+      outline: none;
+      border-radius: 10px;
+    }
+  }
+}
+// js
+.error{
+  border: 2px solid red;
+}
+.error-message{
+  color: red;
+  padding-bottom: 1em;
+}

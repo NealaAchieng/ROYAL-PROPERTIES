@@ -1,0 +1,46 @@
+@use"../utilities/mixins" as *;
+@use"../utilities/variables" as *;
+.nav {
+    .container{
+
+        background-color: $white;
+        
+    }
+    &__container {
+      @include flex(space-around, center);
+      border-bottom: 2px 2px 5px;
+      gap:5px;
+      color:#005CFF;
+      color:white;
+    
+    }
+    &__right {
+      ul {
+        @include flex(space-between, center);
+  
+        li {
+          padding: 1em;
+          a{
+            color: black;
+          }
+          }
+          button{
+            margin: 0 auto;
+        padding: 1em;
+        background-color:#005CFF;
+        color:#fff;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+            
+            
+
+          }
+  
+      
+       
+        }
+      }
+    }
+
+

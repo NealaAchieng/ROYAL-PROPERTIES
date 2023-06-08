@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="CSS/style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <header>
+    <nav class="nav">
+      <div class="container">
+        <div class="nav__container">
+          <div class="nav__left">
+            <img width="150" src="images/logo.png" alt="logo" />
+          </div>
+
+          <div class="nav__right">
+            <ul>
+              <li><a href="/index.html">Home</a></li>
+              <li><a href="/index.html">properties</a></li>
+              <li><a href="/add.html">Add-a-house</a></li>
+              <button><a>Booking</a></button>
+
+              <li><i class="fa-solid fa-bars" style="color: #000000"></i></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <body>
+    <section class="form">
+      <div class="container">
+        <div class="container__items">
+          <div>
+            <h3>Fill The Form Below</h3>
+          </div>
+          <form>
+            <p id="message"></p>
+            <label for="">Name</label>
+            <div>
+              <input
+                class="house"
+                id="add-a-house"
+                placeholder="Names of the house"
+                type="text"
+              />
+            </div>
+            <label for="">Price</label>
+            <div>
+              <input
+                class="house"
+                id="add-a-house"
+                placeholder="price"
+                type="text"
+              />
+            </div>
+            <label for="">Location</label>
+            <div>
+              <input
+                class="house"
+                id="add-a-house"
+                placeholder="Area"
+                type="text"
+              />
+            </div>
+            <label for="">Size</label>
+            <div>
+              <input
+                class="house"
+                id="add-a-house"
+                placeholder="Squarefeet"
+                type="text"
+              />
+            </div>
+
+            <label for="">Buy, Rent or Sell</label>
+            <select class="house">
+              <option value="" selected disabled>select</option>
+              <option value="">Rent a house</option>
+              <option value="">Buy a house</option>
+              <option value="">Sell a house</option>
+            </select>
+
+            <label for="">Images</label>
+            <div>
+              <input
+                class="house"
+                id="add-a-house"
+                placeholder="image"
+                type="text"
+              />
+            </div>
+
+            <label for="">Amenities</label>
+            <div>
+              <textarea
+                class="house"
+                id="add-a-house"
+                placeholder="Describtion"
+                rows="7"
+                cols="20"
+              ></textarea>
+            </div>
+
+            <div>
+              <select class="house">
+                <option value="" selected disabled>Select houses</option>
+                <option value="">Hazel Copse</option>
+                <option value="">Oklands Longview</option>
+                <option value="">Poppy Hedgerous</option>
+              </select>
+            </div>
+            <button id="submit-house" type="submit">ADD</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer__container">
+        <div class="footer__container__section">
+          <div>
+            <img width="200" src="images/logo.png" alt="" />
+          </div>
+          <img width="50" src="images/twitter.png" alt="" />
+          <img width="50" src="images/facebook.png" alt="" />
+          <img width="50" src="images/instagram.png" alt="" />
+        </div>
+
+        <div class="footer__container__section">
+          <h3>Quick Links</h3>
+          <ul>
+            <li class="home">Home</li>
+            <li>Properties</li>
+            <li>Add-a-house</li>
+          </ul>
+        </div>
+
+        <div class="footer__container__section">
+          <h3>Contact Details</h3>
+          <ul>
+            <li><i class="fa-solid fa-phone"></i>+254789810108</li>
+            <li><i class="fa-solid fa-phone"></i>+254115708003</li>
+            <li><i class="fa-solid fa-envelope"></i>@chneala49@gmail.com</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <script src="js/app.js"></script>
+  </body>
+</html>
