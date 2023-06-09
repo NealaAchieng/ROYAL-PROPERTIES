@@ -1,6 +1,7 @@
 @use "../utilities/variables" as *;
 @use "../utilities/mixins" as *;
 .footer {
+  cursor: pointer;
   &__container {
     @include flex(center, center);
     gap: 17em;

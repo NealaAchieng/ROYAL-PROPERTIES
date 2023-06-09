@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Details</title>
+    <title>Add a house</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,9 +30,9 @@
 
           <div class="nav__right">
             <ul>
-              <li><a href="/index.html">Home</a></li>
-              <li><a href="/index.html">properties</a></li>
-              <li><a href="/add.html">Add-a-house</a></li>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="detail.html">properties</a></li>
+              <li><a href="add.html">Add-a-house</a></li>
               <button><a>Booking</a></button>
 
               <li><i class="fa-solid fa-bars" style="color: #000000"></i></li>
@@ -51,7 +51,7 @@
           </div>
           <form>
             <p id="message"></p>
-            <label for="">Name</label>
+            <!-- <label for="">Name</label>
             <div>
               <input
                 class="house"
@@ -59,6 +59,14 @@
                 placeholder="Names of the house"
                 type="text"
               />
+            </div> -->
+            <div>
+              <select class="house">
+                <option value="" selected disabled>Select houses</option>
+                <option value="">Hazel Copse</option>
+                <option value="">Oklands Longview</option>
+                <option value="">Poppy Hedgerous</option>
+              </select>
             </div>
             <label for="">Price</label>
             <div>
@@ -122,14 +130,7 @@
               ></textarea>
             </div>
 
-            <div>
-              <select class="house">
-                <option value="" selected disabled>Select houses</option>
-                <option value="">Hazel Copse</option>
-                <option value="">Oklands Longview</option>
-                <option value="">Poppy Hedgerous</option>
-              </select>
-            </div>
+            
             <button id="submit-house" type="submit">ADD</button>
           </form>
         </div>
@@ -150,9 +151,9 @@
         <div class="footer__container__section">
           <h3>Quick Links</h3>
           <ul>
-            <li class="home">Home</li>
-            <li>Properties</li>
-            <li>Add-a-house</li>
+            <li><a href="index.html"></a>Home</li>
+            <li><a href="detail.html"></a>Properties</li>
+            <li><a href="add.html"></a>Add-a-house</li>
           </ul>
         </div>
 
@@ -166,6 +167,7 @@
         </div>
       </div>
     </section>
-    <script src="js/app.js"></script>
+    <!-- <script src="js/app.js"></script> -->
+    <script src="js/addHouse.js"></script>
   </body>
 </html>
